@@ -24,7 +24,7 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -92,7 +92,7 @@ img {
   margin-right: 50px;
 }
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -135,14 +135,14 @@ img {
   font-weight: 500;
 }
 .email-icon {
-  content: '';
+  content: "";
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 .tell-icon {
-  content: '';
+  content: "";
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -162,7 +162,7 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 4px;
@@ -183,7 +183,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../image/hero/bg.jpg ');
+    url("../image/hero/bg.jpg ");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -274,16 +274,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.visually-hidden-checkbox {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
+
 /* ------------------------------ End Advantage ----------------------------- */
 
 /* -------------------------------- Services -------------------------------- */
@@ -563,6 +554,7 @@ img {
   min-width: 200px;
   height: 50px;
   background-color: var(--accent-color);
+  border: none;
   border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -727,6 +719,7 @@ img {
 
 .modal {
   position: absolute;
+  padding: 40px 40px 20px 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -765,8 +758,7 @@ img {
   /* border-color: var(--accent-color); на макете не меняется цвет */
 }
 .modal-header {
-  padding-top: 40px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
@@ -776,9 +768,9 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  padding: 0 40px 20px 40px;
 }
 .modal-form-field {
+  margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -788,7 +780,6 @@ img {
   position: relative;
   display: block;
   margin-top: 4px;
-  margin-bottom: 10px;
 }
 
 .modal-form-input {
@@ -836,10 +827,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .modal-form-checkbox-policy {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form-icon-checkbox {
   position: relative;
@@ -855,7 +848,16 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.visually-hidden-checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .icon-checkbox {
   position: absolute;
   width: 16px;
@@ -873,6 +875,12 @@ img {
   line-height: 1.7;
   text-align: center;
   color: var(--primary-text-color);
+}
+.modal-form-policy-link {
+  line-height: 1.7;
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-decoration-style: solid;
 }
 /* kk */
 
